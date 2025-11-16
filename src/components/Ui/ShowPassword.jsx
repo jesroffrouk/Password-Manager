@@ -12,11 +12,11 @@ export default function ShowPassword({crendentials}) {
   const maskText = (text) => '•'.repeat(text?.length || 8);
 
   return (
-    <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
+    <div className="w-full max-w-md p-6 rounded-lg shadow-lg">
       <div className="space-y-4">
         {/* Website Name */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-600 mb-2">
+          <label className="flex items-center gap-2 text-sm font-medium mb-2">
             <Globe className="w-4 h-4" />
             Website
           </label>
@@ -27,12 +27,12 @@ export default function ShowPassword({crendentials}) {
 
         {/* Username */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-600 mb-2">
+          <label className="flex items-center gap-2 text-sm font-medium mb-2">
             <User className="w-4 h-4" />
             Username
           </label>
           <div className="flex items-center gap-2">
-            <div className="flex-1 px-4 py-3 bg-gray-50 rounded-lg text-gray-800 font-mono">
+            <div className="flex-1 px-4 py-3 bg-gray-50 text-gray-800 rounded-lg font-mono">
               {showUsername ? Identifier : maskText(Identifier)}
             </div>
             <button
@@ -50,12 +50,12 @@ export default function ShowPassword({crendentials}) {
 
         {/* Password */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-600 mb-2">
+          <label className="flex items-center gap-2 text-sm font-medium mb-2">
             <Lock className="w-4 h-4" />
             Password
           </label>
           <div className="flex items-center gap-2">
-            <div className="flex-1 px-4 py-3 bg-gray-50 rounded-lg text-gray-800 font-mono">
+            <div className="flex-1 px-4 py-3 bg-gray-50 text-gray-800 rounded-lg font-mono">
               {showPassword ? Password : maskText(Password)}
             </div>
             <button

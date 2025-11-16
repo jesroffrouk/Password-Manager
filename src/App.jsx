@@ -21,6 +21,8 @@ function App() {
       const dataAlreadyExist = await dataExist()
       if(dataAlreadyExist){
         setShowSave(true)
+      }else {
+        setShowSave(false)
       }
     }
     handleCleaning()
@@ -31,8 +33,10 @@ function App() {
       setShowManager(false);
     }
     window.addEventListener('error-handle',handleError)
-    return () => window.removeEventListener('error-handle',handleError)
-  },[])
+    return () => {
+      window.removeEventListener('error-handle',handleError)
+    }
+  },[showManager])
 
   function handleFileSubmit(){
     console.log('file submit handled')

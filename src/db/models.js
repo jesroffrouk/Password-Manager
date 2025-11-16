@@ -58,7 +58,6 @@ export async function dataExist() {
   const tx = db.transaction("Pwd", "readwrite");
   const store = tx.objectStore("Pwd");
   const accounts = (await requestToPromise(store.get("Accounts")))
-  console.log(accounts)
   if(!accounts || Object.keys(accounts).length == 0){
     return false
   }
