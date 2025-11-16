@@ -36,7 +36,6 @@ function cursorToPromise(request) {
         cursor.continue()
       } else {
         console.log("Entries all displayed.");
-        console.log(data)
         resolve(data)
       }
     }
