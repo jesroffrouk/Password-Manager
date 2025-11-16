@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+/* 
+let's notes theme details to keep track of it
+
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+    --color-primary1: #150025;
+    --color-secondary1: #2A0049;
+    --color-bg: #000000;
+    --color-text: #edf2fb;
+    --color-muted: #35005d;
+
+  border-radius: leading-lg
+  Padding: p-6
+  shadow: box shadow with a color
+
+*/
+
+
+
+.font-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+@theme {
+    /* choose bg colors */
+    --color-primary1: #150025;
+    --color-secondary1: #2A0049;
+    --color-bg: #000000;
+    --color-text: #edf2fb;
+    --color-muted: #35005d;
+    --color-button: #2563EB;
+    --color-button-hover: #1E40AF;
+    /* choose fonts */
+    /* font details are inside in font-regular. for custom one I would just note it here with needs */
+    /* choose spacing */
+}
+
+/* first two components */
+
+.regular-container {
+ @apply cursor-pointer border rounded-lg flex items-center justify-center sm:h-[200px] lg:w-[900px] sm:w-[500px] hover:bg-text hover:text-bg h-[200px] w-[400px]
+}
+
+.container-size {
+  @apply sm:w-[500px] lg:w-[900px] w-[400px] 
+}

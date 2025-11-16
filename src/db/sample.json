@@ -1,0 +1,37 @@
+{
+
+  "Hash": "hashed Password which would be needed to check password consistency",
+  "Accounts": {
+    "ServiceName": {
+      "Identifier": "cypher text",
+      "decrypt":  {
+        "salt": "key derived salt",
+        "Iv": "encryption salt"
+      }
+    },
+    "Facebook": {
+      "Identifier": "non-cyphertext",
+      "Passwd": "cyphertext",
+      "decrypt": {
+        "salt": "key derived salt",
+        "Iv": "encryption salt"
+      }
+    },
+    "Twitter": {
+      "Identifier": "non-cyphertext",
+      "Passwd": "cyphertext",
+      "Decrypt": {
+        "Salt": "key derived salt",
+        "Iv": "encryption salt"
+      }
+    },
+    "Instagram": {
+      "Identifier": "non-cyphertext",
+      "Passwd": "cyphertext",
+      "decrypt": {
+        "Salt": "key derived salt",
+        "Iv": "encryption salt"
+      }
+    }
+  }
+}
